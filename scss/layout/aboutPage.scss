@@ -64,7 +64,7 @@
     @include common-transition;
     @include mq(lg) {
       .intro {
-        transform: translateX(-180px);
+        //transform: translateX(-180px);
       }
     }
 

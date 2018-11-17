@@ -4,9 +4,8 @@
 
 // Utilities
 @import 'scss/utilities/variables';
-@import 'scss/utilities/mixins';
-@import 'scss/utilities/_typed_effect';
-@import 'scss/utilities/_slidein_effect';
+@import 'scss/utilities/mixin';
+@import 'scss/utilities/mediaQuery';
 
 // Base Styles
 @import "scss/base/base";
@@ -15,11 +14,11 @@
 @import "scss/layout/container";
 @import "scss/layout/header";
 @import "scss/layout/footer";
-
+@import "scss/layout/aboutPage";
+@import "scss/layout/workPage";
 
 // Component Styles
-@import "scss/components/mobile_nav";
-@import "scss/components/nav";
+@import "scss/components/navBar";
 
 
 // Flex wrap + Flex Basis [flex-basis: 100% or 50% or 25%;]

@@ -431,12 +431,6 @@ footer {
   transition: .5s ease;
 }
 
-@media screen and (min-width: 1200px) {
-  .about-pg .self-dsc-pg .intro {
-    transform: translateX(-180px);
-  }
-}
-
 .about-pg .self-dsc-pg h2 {
   text-align: center;
   margin-bottom: 0;
@@ -566,7 +560,7 @@ footer {
   right: 50px;
   top: 35px;
   display: block;
-  position: fixed;
+  position: absolute;
   background: #306293;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -589,7 +583,7 @@ footer {
 
 #nav-toggle {
   display: block;
-  position: fixed;
+  position: absolute;
   right: 50px;
   top: 35px;
   width: 40px;
