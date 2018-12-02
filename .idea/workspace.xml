@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="960">
+              <caret line="64" selection-start-line="24" selection-start-column="26" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -64,9 +64,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="570" />
-    <option name="width" value="842" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="488" />
+    <option name="width" value="924" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -133,15 +133,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543789211727</updated>
-      <workItem from="1543789213245" duration="2987000" />
+      <workItem from="1543789213245" duration="3394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2987000" />
+    <option name="totallyTimeSpent" value="3394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="570" y="0" width="842" height="900" extended-state="1" />
+    <frame x="488" y="0" width="924" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" side_tool="true" />
@@ -193,8 +193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="960">
+          <caret line="64" selection-start-line="24" selection-start-column="26" selection-end-line="64" />
         </state>
       </provider>
     </entry>
