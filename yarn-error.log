@@ -1,0 +1,31 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add gulp -D
+
+PATH: 
+  /usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/yarn-1.9.2/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, copyfile '/Users/doiverson/Library/Caches/Yarn/v4/npm-extend-shallow-2.0.1-51af7d614ad9a9f610ea1bafbb989d6b1c56890f/node_modules/extend-shallow/package.json' -> '/Users/doiverson/Documents/Portfolio_Tak/node_modules/extend-shallow/package.json'
+
+npm manifest: 
+  {
+    "name": "Portfolio_Tak",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

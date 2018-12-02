@@ -1,0 +1,27 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+// Utilities
+@import 'scss/utilities/variables';
+@import 'scss/utilities/mixins';
+@import 'scss/utilities/_typed_effect';
+@import 'scss/utilities/_slidein_effect';
+
+// Base Styles
+@import "scss/base/base";
+
+// Layout Styles
+@import "scss/layout/container";
+@import "scss/layout/header";
+@import "scss/layout/footer";
+
+
+// Component Styles
+@import "scss/components/mobile_nav";
+@import "scss/components/nav";
+
+
+// Flex wrap + Flex Basis [flex-basis: 100% or 50% or 25%;]
+
+///////////////////////////////////////////////////////////////
