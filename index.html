@@ -27,13 +27,25 @@
     <!--Logo and Nav bar-->
     <header>
         <a href="#"><img class="logo" src="img/logo_img.png" width="" height="" alt="Shosuke's Logo"></a>
+
+        <!--Mobile Nav bar-->
+        <a class="menu-trigger" href="#" onclick="toggle(this)">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+        </a>
+
         <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -65,5 +77,6 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="js/toggle.js"></script>
 </body>
 </html>
