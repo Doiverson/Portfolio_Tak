@@ -62,6 +62,26 @@ header {
     margin: 0 auto;
   }
 
+  .self-dsc {
+    width: 80%;
+    text-align: center;
+    margin: 60px auto 0 auto;
+  }
+}
+
+// Works
+
+#works-wrapper {
+
+  .work {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+      max-width: 90%;
+    }
+  }
 }
 
 

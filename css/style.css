@@ -49,6 +49,22 @@ header .nav {
   margin: 0 auto;
 }
 
+#top-wrapper .self-dsc {
+  width: 80%;
+  text-align: center;
+  margin: 60px auto 0 auto;
+}
+
+#works-wrapper .work {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#works-wrapper .work img {
+  max-width: 90%;
+}
+
 .menu-trigger {
   position: absolute;
   top: 20px;
