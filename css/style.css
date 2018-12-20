@@ -1,9 +1,56 @@
-.nav {
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.site-wrapper {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+article {
+  border: dotted 1px red;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header .nav {
   display: none;
 }
 
+#top-wrapper {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+#top-wrapper .self-img {
+  width: 80%;
+  height: 450px;
+  background: cadetblue;
+  margin: 0 auto;
+}
+
 .menu-trigger {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 40px;
