@@ -1,7 +1,29 @@
 // Variables
+$h1: 3.2rem;
+$h2: 2.5rem;
+$h3: 2.1rem;
+$p: 1.6rem;
+
+$main: #FFFBF2;
+
+// Media Query
+$breakpoints: (
+        'sm': 'screen and (min-width: 700px)',
+        'md': 'screen and (min-width: 1000px)',
+        'lg': 'screen and (min-width: 1200px)',
+) !default;
 
 
 // Mixin
+
+
+// Media Query
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 
 // Base
 
@@ -12,6 +34,22 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+p {
+  font-size: $p;
 }
 
 .site-wrapper {
@@ -63,6 +101,7 @@ header {
   }
 
   .self-dsc {
+    font-size: 2.3rem;
     width: 80%;
     text-align: center;
     margin: 60px auto 0 auto;
@@ -72,6 +111,7 @@ header {
 // Works
 
 #works-wrapper {
+  background: $main;
 
   .work {
     width: 90%;
@@ -85,7 +125,42 @@ header {
 }
 
 
+// Contact
 
+#contact-wrapper {
+
+  p {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+
+      li {
+        margin-right: 3px;
+
+        a {
+          font-size: 2.5rem;
+          color: black;
+        }
+      }
+    }
+  }
+
+}
+
+// Footer
+
+footer {
+  text-align: center;
+}
 
 
 // Nav bar (Mobile)

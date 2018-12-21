@@ -7,6 +7,22 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
 .site-wrapper {
   padding-right: 10px;
   padding-left: 10px;
@@ -50,9 +66,14 @@ header .nav {
 }
 
 #top-wrapper .self-dsc {
+  font-size: 2.3rem;
   width: 80%;
   text-align: center;
   margin: 60px auto 0 auto;
+}
+
+#works-wrapper {
+  background: #FFFBF2;
 }
 
 #works-wrapper .work {
@@ -63,6 +84,35 @@ header .nav {
 
 #works-wrapper .work img {
   max-width: 90%;
+}
+
+#contact-wrapper p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#contact-wrapper .social-icons {
+  margin-bottom: 10px;
+}
+
+#contact-wrapper .social-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+#contact-wrapper .social-icons ul li {
+  margin-right: 3px;
+}
+
+#contact-wrapper .social-icons ul li a {
+  font-size: 2.5rem;
+  color: black;
+}
+
+footer {
+  text-align: center;
 }
 
 .menu-trigger {
