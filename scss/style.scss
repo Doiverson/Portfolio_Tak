@@ -93,11 +93,27 @@ header {
   height: 100vh;
   padding-top: 100px;
 
+  @include mq(){
+    height: 90vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+
   .self-img {
     width: 80%;
     height: 450px;
     background: cadetblue;
     margin: 0 auto;
+
+    @include mq(){
+      width: 50%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 
   .self-dsc {
@@ -105,6 +121,11 @@ header {
     width: 80%;
     text-align: center;
     margin: 60px auto 0 auto;
+
+    @include mq(){
+      width: 50%;
+      margin-top: 0;
+    }
   }
 }
 
@@ -112,6 +133,13 @@ header {
 
 #works-wrapper {
   background: $main;
+
+  @include mq(){
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: center;
+  }
 
   .work {
     width: 90%;

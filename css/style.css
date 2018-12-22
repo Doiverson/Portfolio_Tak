@@ -58,11 +58,29 @@ header .nav {
   padding-top: 100px;
 }
 
+@media screen and (min-width: 700px) {
+  #top-wrapper {
+    height: 90vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 #top-wrapper .self-img {
   width: 80%;
   height: 450px;
   background: cadetblue;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+  #top-wrapper .self-img {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 #top-wrapper .self-dsc {
@@ -72,8 +90,24 @@ header .nav {
   margin: 60px auto 0 auto;
 }
 
+@media screen and (min-width: 700px) {
+  #top-wrapper .self-dsc {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
 #works-wrapper {
   background: #FFFBF2;
+}
+
+@media screen and (min-width: 700px) {
+  #works-wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: center;
+  }
 }
 
 #works-wrapper .work {
