@@ -207,6 +207,10 @@ header {
 // Footer
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
 }
 
@@ -249,6 +253,14 @@ footer {
 }
 
 
+// works_page
+
+.work-pg {
+  padding-top: 100px;
+}
+
+
+// about_page
 
 
 //// ======================================
