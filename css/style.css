@@ -60,7 +60,7 @@ header .nav {
 
 @media screen and (min-width: 700px) {
   #top-wrapper {
-    height: 90vh;
+    height: 80vh;
     padding-top: 80px;
     display: flex;
     flex-direction: row;
@@ -214,4 +214,21 @@ footer {
 
 .work-pg {
   padding-top: 100px;
+}
+
+.about-pg {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.about-pg .self-img-pg {
+  width: 80%;
+  height: 300px;
+  background: cadetblue;
+  margin: 0 auto;
+}
+
+.about-pg .self-dsc-pg h1 {
+  font-size: 3rem;
+  text-align: center;
 }

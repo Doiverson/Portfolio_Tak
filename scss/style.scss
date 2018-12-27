@@ -94,7 +94,7 @@ header {
   padding-top: 100px;
 
   @include mq(){
-    height: 90vh;
+    height: 80vh;
     padding-top: 80px;
     display: flex;
     flex-direction: row;
@@ -261,6 +261,26 @@ footer {
 
 
 // about_page
+
+.about-pg {
+  height: 100vh;
+  padding-top: 100px;
+
+  .self-img-pg {
+    width: 80%;
+    height: 300px;
+    background: cadetblue;
+    margin: 0 auto;
+  }
+
+  .self-dsc-pg {
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+
+}
 
 
 //// ======================================
