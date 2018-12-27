@@ -221,6 +221,16 @@ footer {
   padding-top: 100px;
 }
 
+@media screen and (min-width: 1000px) {
+  .about-pg {
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .about-pg .self-img-pg {
   width: 80%;
   height: 300px;
@@ -228,7 +238,22 @@ footer {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) {
+  .about-pg .self-img-pg {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 .about-pg .self-dsc-pg h1 {
   font-size: 3rem;
   text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .about-pg .self-dsc-pg {
+    width: 50%;
+    margin-top: 0;
+  }
 }
