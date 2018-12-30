@@ -255,10 +255,24 @@ footer {
 
 // works_page
 
-.work-pg {
-  padding-top: 100px;
-}
 
+.grid {
+  padding-top: 100px;
+  margin: 0 auto;
+
+  .grid-sizer,
+  .grid-item {
+    width: 30%;
+  }
+
+  .grid-item {
+    height: 200px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background: cadetblue;
+    border: solid 1px black;
+  }
+}
 
 // about_page
 
