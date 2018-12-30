@@ -1,19 +1,13 @@
-// jQuery(function($){
-//     $(window).on('load',function(){
-//     var $grid = $('.grid').imagesLoaded(function () {
-//     $grid.masonry({
-//         itemSelector: '.grid-item',
-//         percentPosition: true,
-//         columnWidth: 'grid-sizer'
-//     });
-//     });
-//     });
-// });
 
-$('.grid').masonry({
-    columnWidth: '.grid-sizer',
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    gutter: 5,
-    fitWidth: true
+    var $grid = $('.grid').masonry({
+        columnWidth: 302,
+        itemSelector: '.grid-item',
+        gutter: 5,
+        fitWidth: true
+    });
+
+$(window).on('load',function() {
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry('layout');
+    });
 });

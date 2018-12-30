@@ -213,21 +213,24 @@ footer {
 }
 
 .grid {
-  padding-top: 100px;
-  margin: 0 auto;
-}
-
-.grid .grid-sizer,
-.grid .grid-item {
-  width: 30%;
+  margin: 100px  auto 0 auto;
+  background: darkgrey;
 }
 
 .grid .grid-item {
-  height: 200px;
+  width: 300px;
+  overflow: hidden;
   margin-bottom: 5px;
   margin-top: 5px;
-  background: cadetblue;
-  border: solid 1px black;
+  border: solid red 1px;
+}
+
+.grid .grid-item img {
+  max-width: 100%;
+}
+
+.grid .gap {
+  margin-top: 30px;
 }
 
 .about-pg {

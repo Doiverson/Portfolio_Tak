@@ -55,6 +55,7 @@ p {
 .site-wrapper {
   padding-right: 10px;
   padding-left: 10px;
+  // masonry full width 3 columns, then set 200px on both sides
 }
 
 article {
@@ -255,22 +256,25 @@ footer {
 
 // works_page
 
-
 .grid {
-  padding-top: 100px;
-  margin: 0 auto;
-
-  .grid-sizer,
-  .grid-item {
-    width: 30%;
-  }
+  //width: 1000px;
+  margin: 100px  auto 0 auto;
+  background: darkgrey;
 
   .grid-item {
-    height: 200px;
+    width: 300px;
+    overflow: hidden;
     margin-bottom: 5px;
     margin-top: 5px;
-    background: cadetblue;
-    border: solid 1px black;
+    border: solid red 1px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .gap {
+    margin-top: 30px;
   }
 }
 
