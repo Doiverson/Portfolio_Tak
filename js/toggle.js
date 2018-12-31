@@ -1,4 +1,4 @@
 
-function toggle(x) {
-    x.classList.toggle("open");
-}
+$('#nav-toggle').click(function(){
+    $('#top-head-inner').toggleClass('open');
+});
