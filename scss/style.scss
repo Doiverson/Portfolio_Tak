@@ -31,10 +31,15 @@ $breakpoints: (
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  height: 100%;
 }
 
 h1 {
@@ -56,6 +61,7 @@ p {
 .site-wrapper {
   padding-right: 10px;
   padding-left: 10px;
+  height: 100%;
 
   // masonry full width 3 columns, then set 200px on both sides
 }
@@ -210,9 +216,6 @@ header {
 // Footer
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   text-align: center;
 }
@@ -415,8 +418,17 @@ footer {
 // about_page
 
 .about-pg {
-  height: 100vh;
   padding-top: 100px;
+  //need a photo on mobile size??
+  //height: 100vh;
+
+  div:first-child {
+    margin-bottom: 30px;
+  }
+
+  @include mq(){
+    height: 100vh;
+  }
 
   @include mq(md){
     height: 100vh;
@@ -424,30 +436,73 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    div:first-child {
+      margin-bottom: 0;
+    }
   }
 
   .self-img-pg {
     width: 80%;
-    height: 300px;
     background: cadetblue;
     margin: 0 auto;
 
+    @include mq(){
+      height: 45%;
+    }
+
     @include mq(md){
       width: 50%;
-      margin-right: 10px;
-      margin-left: 10px;
+      height: 80%;
+      margin: 0 10px;
+    }
+
+    @include mq(lg){
+      margin: 0 5px 0 20px;
     }
   }
 
   .self-dsc-pg {
+    width: 80%;
+    margin: 0 auto;
+
     h1 {
       font-size: 3rem;
       text-align: center;
     }
 
+    p {
+      text-align: left;
+    }
+
+    @include mq(){
+      width:90%;
+      text-align: center;
+
+      div {
+        width: 48%;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
     @include mq(md){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       width: 50%;
+      height: 80%;
       margin-top: 0;
+
+      div {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @include mq(lg){
+      margin: 0 20px 0 5px;
     }
   }
 

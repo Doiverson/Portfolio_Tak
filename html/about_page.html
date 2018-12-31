@@ -27,24 +27,25 @@
         <a class="logo" href="#"><img src="../img/logo_img.png" width="" height="" alt="Shosuke's Logo"></a>
 
         <!--Mobile Nav bar-->
-        <a class="menu-trigger" href="#" onclick="toggle(this)">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </a>
-
-        <nav class="nav">
-            <div>
+        <div id="top-head-inner">
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav id="global-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
                     <li><a href="#">WORKS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <div id="nav-bg"></div>
+        </div>
+
     </header>
 
     <article class="about-pg">
@@ -57,11 +58,12 @@
             <div class="intro">
                 <h1>ABOUT</h1>
                 <p>and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-            </div>
-            <div class="skill">
+                <p>and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div><div class="skill">
                 <h1>SKILL</h1>
                 <p>and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-            </div>
+            <p>and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        </div>
         </div>
 
     </article>
@@ -71,7 +73,8 @@
     </footer>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="../js/toggle.js"></script>
 </body>
 </html>
 
