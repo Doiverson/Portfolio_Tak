@@ -330,6 +330,11 @@ footer {
 
 .grid .grid-item img {
   max-width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.grid .grid-item img:hover {
+  transform: scale(1.1);
 }
 
 .grid .top-logo {
