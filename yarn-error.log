@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/doiverson/Documents/Portfolio_Tak/node_modules/lodash/_isPrototype.js'
+  Error: EACCES: permission denied, copyfile '/Users/doiverson/Library/Caches/Yarn/v4/npm-ansi-gray-0.1.1-2962cf54ec9792c48510a3deb524436861ef7251/node_modules/ansi-gray/index.js' -> '/Users/doiverson/Documents/Portfolio_Tak/node_modules/ansi-gray/index.js'
 
 npm manifest: 
   {
