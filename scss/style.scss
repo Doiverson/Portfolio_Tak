@@ -28,6 +28,8 @@ $breakpoints: (
 
 // Base
 
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -40,6 +42,7 @@ html {
 
 body {
   height: 100%;
+  font-family: 'Muli', sans-serif;
 }
 
 h1 {
@@ -428,12 +431,13 @@ footer {
 // about_page
 
 .about-pg {
+  position: relative;
   padding-top: 100px;
   //need a photo on mobile size??
   //height: 100vh;
 
-  div:first-child {
-    margin-bottom: 30px;
+  .flex-box {
+    height: 100%;
   }
 
   @include mq(){
@@ -443,19 +447,20 @@ footer {
   @include mq(md){
     height: 100vh;
     padding-top: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-    div:first-child {
-      margin-bottom: 0;
+    .flex-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
+
   }
 
   .self-img-pg {
     width: 80%;
     background: cadetblue;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+
 
     @include mq(){
       height: 45%;
@@ -514,6 +519,11 @@ footer {
     @include mq(lg){
       margin: 0 20px 0 5px;
     }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
   }
 
 }
