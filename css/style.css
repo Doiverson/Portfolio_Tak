@@ -73,6 +73,12 @@ header .nav {
   padding-top: 110px;
 }
 
+@media screen and (min-width: 500px) {
+  #top-wrapper {
+    height: unset;
+  }
+}
+
 @media screen and (min-width: 700px) {
   #top-wrapper {
     height: 90vh;
@@ -98,6 +104,12 @@ header .nav {
     width: 50%;
     margin-right: 10px;
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #top-wrapper .self-img {
+    max-width: 600px;
   }
 }
 
@@ -189,9 +201,6 @@ header .nav {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
 }
 

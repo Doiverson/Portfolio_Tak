@@ -8,6 +8,7 @@ $main: #FFFBF2;
 
 // Media Query
 $breakpoints: (
+        'xs': 'screen and (min-width: 500px)',
         'sm': 'screen and (min-width: 700px)',
         'md': 'screen and (min-width: 1000px)',
         'lg': 'screen and (min-width: 1200px)',
@@ -118,6 +119,10 @@ header {
   height: 100vh;
   padding-top: 110px;
 
+  @include mq(xs) {
+    height: unset;
+  }
+
   @include mq(){
     height: 90vh;
     padding-top: 110px;
@@ -142,6 +147,11 @@ header {
       margin-right: 10px;
       margin-left: 10px;
     }
+
+    @include mq(lg) {
+      max-width: 600px;
+    }
+
   }
 
   .self-dsc {
@@ -238,9 +248,6 @@ header {
 // Footer
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
 }
 
