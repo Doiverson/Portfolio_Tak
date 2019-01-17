@@ -1,0 +1,42 @@
+// Base
+
+@import url('https://fonts.googleapis.com/css?family=Muli'); // Font "Muli"
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+p {
+  font-size: $p;
+}
+
+.site-wrapper {
+  //padding-right: 10px;
+  //padding-left: 10px;
+  height: 100%;
+
+  // masonry full width 3 columns, then set 200px on both sides
+}

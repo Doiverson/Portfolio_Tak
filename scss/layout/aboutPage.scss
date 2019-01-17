@@ -1,0 +1,120 @@
+// about_page
+
+.about-pg {
+  position: relative;
+  padding-top: 110px;
+
+  .flex-box {
+    height: 100%;
+  }
+
+  @include mq(){
+    height: 100vh;
+  }
+
+  @include mq(md){
+    height: 100vh;
+    padding-top: 80px;
+
+    .flex-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+  }
+
+  .self-img-pg {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+
+    @include mq(){
+      width: 55%;
+    }
+
+    @include mq(md){
+      width: 50%;
+      margin: 0 10px;
+    }
+
+    @include mq(lg){
+      max-width: 600px;
+      margin: 0 10px 0 0
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+
+      @include mq() {
+        max-width: 80%;
+      }
+
+      @include mq(md) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .self-dsc-pg {
+    width: 80%;
+    margin: 0 auto;
+    @include common-transition;
+    @include mq(lg) {
+      .intro {
+        transform: translateX(-180px);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+
+      @include mq(md) {
+        text-align: left;
+      }
+    }
+
+    p {
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      @include mq(md) {
+        letter-spacing: 2.5px;
+      }
+    }
+
+    @include mq(){
+      width:90%;
+      text-align: center;
+
+      div {
+        width: 48%;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    @include mq(md){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 50%;
+      height: 80%;
+      margin-top: 0;
+
+      div {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @include mq(lg){
+      margin: 0 20px 0 5px;
+    }
+  }
+}
