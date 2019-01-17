@@ -31,13 +31,7 @@ p {
 }
 
 .site-wrapper {
-  padding-right: 10px;
-  padding-left: 10px;
   height: 100%;
-}
-
-article {
-  border: dotted 1px red;
 }
 
 header {
@@ -49,7 +43,7 @@ header {
   left: 0;
   top: 0;
   z-index: 1000;
-  background: white;
+  background: #fffbf2f2;
 }
 
 header .logo {
@@ -62,6 +56,7 @@ header .logo {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: 5px;
+  z-index: 5;
 }
 
 header .nav {
@@ -81,7 +76,6 @@ header .nav {
 
 @media screen and (min-width: 700px) {
   #top-wrapper {
-    height: 90vh;
     padding-top: 110px;
     display: flex;
     flex-direction: row;
@@ -91,7 +85,6 @@ header .nav {
 
 #top-wrapper .self-img {
   width: 100%;
-  margin: 0 auto;
 }
 
 #top-wrapper .self-img img {
@@ -102,8 +95,6 @@ header .nav {
 @media screen and (min-width: 700px) {
   #top-wrapper .self-img {
     width: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
   }
 }
 
@@ -277,7 +268,7 @@ footer {
   top: 35px;
   display: block;
   position: fixed;
-  background: #17A669;
+  background: #306293;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: all .3s ease-out;
@@ -349,8 +340,12 @@ footer {
   background: #fff;
 }
 
+#grid-wrapper {
+  padding-top: 130px;
+}
+
 .grid {
-  margin: 100px  auto 0 auto;
+  margin: 0 auto;
 }
 
 .grid .grid-item {
@@ -364,6 +359,10 @@ footer {
   -ms-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease;
+}
+
+.grid .grid-item span {
+  font-size: 1.5rem;
 }
 
 .grid .grid-item:before {
@@ -402,7 +401,7 @@ footer {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  transform: scale(1.1);
+  filter: blur(4px);
 }
 
 .grid .grid-item:hover .wk-ttl {

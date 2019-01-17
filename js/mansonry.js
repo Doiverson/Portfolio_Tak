@@ -2,7 +2,7 @@
     var $grid = $('.grid').masonry({
         columnWidth: 300,
         itemSelector: '.grid-item',
-        gutter: 5,
+        gutter: 20,
         fitWidth: true
     });
 
