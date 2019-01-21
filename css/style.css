@@ -36,7 +36,6 @@ p {
 
 #top-wrapper {
   height: 100vh;
-  padding-top: 110px;
 }
 
 @media screen and (min-width: 500px) {
@@ -47,7 +46,6 @@ p {
 
 @media screen and (min-width: 700px) {
   #top-wrapper {
-    padding-top: 110px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -201,6 +199,8 @@ footer {
 
 .grid {
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 .grid .grid-item {
@@ -486,6 +486,12 @@ footer {
   .about-pg .self-dsc-pg {
     margin: 0 20px 0 5px;
   }
+}
+
+.intro,
+.skill {
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 #top-head-inner {

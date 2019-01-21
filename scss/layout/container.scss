@@ -2,14 +2,12 @@
 
 #top-wrapper {
   height: 100vh;
-  padding-top: 110px;
 
   @include mq(xs) {
     height: unset;
   }
 
   @include mq(){
-    padding-top: 110px;
     display: flex;
     flex-direction: row;
     align-items: center;

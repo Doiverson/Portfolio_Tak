@@ -118,3 +118,8 @@
     }
   }
 }
+
+.intro,
+.skill {
+  @include slide-element;
+}

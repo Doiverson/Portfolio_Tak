@@ -6,6 +6,7 @@
 
 .grid {
   margin: 0 auto;
+  @include slide-element;
 
   .grid-item {
     position: relative;
