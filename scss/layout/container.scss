@@ -119,5 +119,25 @@
       }
     }
   }
+}
 
+.social-icons {
+
+  .fab {
+    @include common-transition;
+  }
+
+  a:hover{
+    .fa-behance-square{
+      color: #0057ff;
+    }
+
+    .fa-linkedin{
+      color: #0077B5;
+    }
+
+    .fa-instagram {
+      color: #e95950;
+    }
+  }
 }

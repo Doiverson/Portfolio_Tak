@@ -1,11 +1,11 @@
 // Mixin
 
 @mixin common-transition {
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 @mixin slide-element {
