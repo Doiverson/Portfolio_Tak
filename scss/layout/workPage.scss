@@ -1,7 +1,11 @@
 // works_page
 
 #grid-wrapper {
-  padding-top: 130px;
+  position: relative;
+
+  @include mq(g-sm) {
+    padding-top: 15px;
+  }
 }
 
 .grid {
