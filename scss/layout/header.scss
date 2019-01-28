@@ -11,6 +11,10 @@ header {
   z-index: 1000;
   background: #F8F8F8;
 
+  @include mq() {
+    position: sticky;
+  }
+
   .logo {
     position: absolute;
     top: 50%;

@@ -7,12 +7,6 @@
     height: unset;
   }
 
-  @include mq(){
-    //display: flex;
-    //flex-direction: row;
-    //align-items: center;
-  }
-
   @include mq(g-sm) {
     margin-right: calc((100vw - 760px)/2);
     margin-left: calc((100vw - 760px)/2);

@@ -12,7 +12,7 @@
     height: 100vh;
   }
 
-  @include mq(md){
+  @include mq(){
     height: 100vh;
     padding-top: 80px;
 
@@ -26,8 +26,8 @@
 
   .self-img-pg {
     width: 80%;
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
 
 
     @include mq(){
@@ -36,21 +36,16 @@
 
     @include mq(md){
       width: 50%;
-      margin: 0 10px;
+      margin: unset;
     }
 
     @include mq(lg){
       max-width: 600px;
-      margin: 0 10px 0 0
     }
 
     img {
       max-width: 100%;
       vertical-align: middle;
-
-      @include mq() {
-        max-width: 80%;
-      }
 
       @include mq(md) {
         max-width: 100%;
@@ -62,14 +57,8 @@
     width: 80%;
     margin: 0 auto;
     @include common-transition;
-    @include mq(lg) {
-      .intro {
-        //transform: translateX(-180px);
-      }
-    }
 
     h2 {
-      text-align: center;
       margin-bottom: 0;
 
       @include mq(md) {
@@ -77,44 +66,41 @@
       }
     }
 
-    p {
+    h3 {
       text-align: left;
       margin-top: 1rem;
       margin-bottom: 1rem;
 
-      @include mq(md) {
+      @include mq() {
         letter-spacing: 2.5px;
       }
     }
 
+    //@include mq(){
+    //  width:90%;
+    //  text-align: center;
+    //  display: flex;
+    //  justify-content: center;
+    //
+    //  div {
+    //    width: 48%;
+    //    display: inline-block;
+    //  }
+    //}
+
     @include mq(){
-      width:90%;
-      text-align: center;
-
-      div {
-        width: 48%;
-        display: inline-block;
-        margin-right: 5px;
-        margin-left: 5px;
-      }
-    }
-
-    @include mq(md){
-      display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       width: 50%;
       height: 80%;
       margin-top: 0;
+      padding-right: 10px;
+      padding-left: 10px;
 
       div {
         display: block;
         width: 100%;
       }
-    }
-
-    @include mq(lg){
-      margin: 0 20px 0 5px;
     }
   }
 }

@@ -1,8 +1,40 @@
 // Nav bar
 
+//PC
+
+.pc-nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  @include common-transition;
+
+  @include mq() {
+    display: inline-block;
+  }
+}
+
+.pc-nav {
+  color: #306293;
+}
+
+.pc-nav:hover {
+  color: red;
+}
+
+//Mobile
+
 #top-head-inner {
   height: 110px;
   position: relative;
+
+  @include mq() {
+    display: none;
+  }
 }
 
 .open #global-nav {
@@ -13,7 +45,7 @@
   visibility: hidden;
   position: absolute;
   color: #fff;
-  top: 40px;
+  top: 90px;
   right: 120px;
   text-align: center;
   font-size: 16px;
@@ -72,20 +104,19 @@
   background: #306293;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 0;
-
 }
 .open #nav-bg {
   -webkit-transform: scale(13);
   transform: scale(13);
-  -webkit-transition: all .6s ease-out;
-  transition: all .6s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
   opacity: 1;
 }
 

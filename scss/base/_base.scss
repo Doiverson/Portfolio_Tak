@@ -34,9 +34,10 @@ p {
 }
 
 .site-wrapper {
-  //padding-right: 10px;
-  //padding-left: 10px;
   height: 100%;
+  padding-top: 110px;
 
-  // masonry full width 3 columns, then set 200px on both sides
+  @include mq() {
+    padding-top: unset;
+  }
 }
