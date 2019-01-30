@@ -71,15 +71,19 @@
 
     img {
       max-width: 100%;
-      -webkit-transition: all 0.5s ease .76s;
-      -moz-transition: all 0.5s ease .76s;
-      -ms-transition: all 0.5s ease .76s;
-      -o-transition: all 0.5s ease .76s;
-      transition: all 0.5s ease .76s;
+      -webkit-transition: all 0.5s ease .35s;
+      -moz-transition: all 0.5s ease .35s;
+      -ms-transition: all 0.5s ease .35s;
+      -o-transition: all 0.5s ease .35s;
+      transition: all 0.5s ease .35s;
     }
 
     .wk-ttl {
-      transition: opacity .5s ease .76s;
+      -webkit-transition: opacity .5s ease .35s;
+      -moz-transition: opacity .5s ease .35s;
+      -ms-transition: opacity .5s ease .35s;
+      -o-transition: opacity .5s ease .35s;
+      transition: opacity .5s ease .35s;
       opacity: 0;
       position: absolute;
       width: 100%;

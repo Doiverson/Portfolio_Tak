@@ -29,14 +29,6 @@
       vertical-align: middle;
     }
 
-    @include mq(){
-      width: 50%;
-    }
-
-    @include mq(lg) {
-      max-width: 600px;
-    }
-
   }
 
   .self-dsc {
@@ -44,6 +36,7 @@
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    @include slide-element;
 
     @include mq(){
       width: 50%;

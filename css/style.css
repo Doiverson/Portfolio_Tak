@@ -78,23 +78,13 @@ p {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 700px) {
-  #top-wrapper .self-img {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #top-wrapper .self-img {
-    max-width: 600px;
-  }
-}
-
 #top-wrapper .self-dsc {
   font-size: 2.3rem;
   width: 80%;
   text-align: center;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 @media screen and (min-width: 700px) {
@@ -270,15 +260,19 @@ footer {
 
 .grid .grid-item img {
   max-width: 100%;
-  -webkit-transition: all 0.5s ease .76s;
-  -moz-transition: all 0.5s ease .76s;
-  -ms-transition: all 0.5s ease .76s;
-  -o-transition: all 0.5s ease .76s;
-  transition: all 0.5s ease .76s;
+  -webkit-transition: all 0.5s ease .35s;
+  -moz-transition: all 0.5s ease .35s;
+  -ms-transition: all 0.5s ease .35s;
+  -o-transition: all 0.5s ease .35s;
+  transition: all 0.5s ease .35s;
 }
 
 .grid .grid-item .wk-ttl {
-  transition: opacity .5s ease .76s;
+  -webkit-transition: opacity .5s ease .35s;
+  -moz-transition: opacity .5s ease .35s;
+  -ms-transition: opacity .5s ease .35s;
+  -o-transition: opacity .5s ease .35s;
+  transition: opacity .5s ease .35s;
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -330,7 +324,6 @@ footer {
 
 .about-pg {
   position: relative;
-  padding-top: 110px;
   margin-bottom: 20px;
 }
 
