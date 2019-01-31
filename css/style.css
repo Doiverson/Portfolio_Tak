@@ -94,6 +94,62 @@ p {
   }
 }
 
+#contact-wrapper {
+  margin-right: calc((100vw - 370px)/2);
+  margin-left: calc((100vw - 370px)/2);
+}
+
+@media screen and (min-width: 760px) {
+  #contact-wrapper {
+    margin-right: calc((100vw - 760px)/2);
+    margin-left: calc((100vw - 760px)/2);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #contact-wrapper {
+    margin-right: calc((100vw - 1150px) / 2);
+    margin-left: calc((100vw - 1150px) / 2);
+  }
+}
+
+#contact-wrapper h2 {
+  text-align: center;
+}
+
+#contact-wrapper h2 a {
+  display: inline-block;
+  position: relative;
+  color: #306293;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#contact-wrapper h2 a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: red;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+
+#contact-wrapper h2 a:hover::after {
+  transform: scale(1, 1);
+}
+
+#contact-wrapper h2 a:hover {
+  color: red;
+}
+
 #contact-wrapper p {
   text-align: center;
   margin-bottom: 5px;
@@ -213,6 +269,10 @@ footer {
 
 .grid .grid-item span {
   font-size: 1.5rem;
+}
+
+.grid .grid-item > a:visited {
+  color: black;
 }
 
 .grid .grid-item:before {
@@ -341,7 +401,7 @@ footer {
 @media screen and (min-width: 700px) {
   .about-pg {
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 110px;
   }
   .about-pg .flex-box {
     display: flex;
@@ -446,16 +506,65 @@ footer {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .about-pg .self-dsc-pg div {
-    display: block;
-    width: 100%;
-  }
 }
 
 .intro,
 .skill {
   opacity: 0;
   transform: translateX(-30px);
+}
+
+.work-wrapper {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .work-wrapper {
+    margin-top: unset;
+  }
+}
+
+.work-wrapper .work-img-pg img {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+@media screen and (min-width: 1000px) {
+  .work-wrapper .work-img-pg img {
+    max-width: 679px;
+  }
+}
+
+.color-scheme {
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .color-scheme {
+    text-align: right;
+  }
+}
+
+.color-scheme .color {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #306293;
+  margin-right: .5rem;
+  margin-top: 2rem;
+}
+
+.color-scheme .sc1 {
+  background: #fff5f5;
+}
+
+.color-scheme .sc2 {
+  background: #ffa4a7;
+}
+
+.color-scheme .sc3 {
+  background: #ffc5bc;
 }
 
 .pc-nav {
