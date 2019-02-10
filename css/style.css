@@ -329,6 +329,7 @@ footer {
 }
 
 .grid .grid-item .wk-ttl {
+  display: table;
   -webkit-transition: opacity .5s ease .35s;
   -moz-transition: opacity .5s ease .35s;
   -ms-transition: opacity .5s ease .35s;
@@ -457,6 +458,7 @@ footer {
 .about-pg .self-dsc-pg {
   width: 80%;
   margin: 0 auto;
+  z-index: 3;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -556,16 +558,8 @@ footer {
   margin-top: 2rem;
 }
 
-.color-scheme .sc1 {
-  background: #fff5f5;
-}
-
-.color-scheme .sc2 {
-  background: #ffa4a7;
-}
-
-.color-scheme .sc3 {
-  background: #ffc5bc;
+.under {
+  border-bottom: 5px solid #306293;
 }
 
 .pc-nav {
@@ -673,7 +667,7 @@ footer {
   content: "";
   width: 40px;
   height: 40px;
-  right: 50px;
+  right: 25px;
   top: 35px;
   display: block;
   position: absolute;
@@ -700,7 +694,7 @@ footer {
 #nav-toggle {
   display: block;
   position: absolute;
-  right: 50px;
+  right: 25px;
   top: 35px;
   width: 40px;
   height: 40px;
